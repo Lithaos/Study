@@ -17,52 +17,50 @@
 </head>
 
 <body>
- <form:form method="POST" class="form-horizontal"
-          action="/survey" modelAttribute="user">
+	<form:form method="POST" class="form-horizontal" action="/survey"
+		modelAttribute="user">
 		<fieldset>
 
-			<!-- Form Name -->
+
 			<legend>Formularz</legend>
 
-			<!-- Name input -->
-			
-
-			<!-- Age input -->
-			<div class="form-group">
+			<div class="col-md-12">
 				<form:label class="col-md-4 control-label" path="age" for="age">Wiek:</form:label>
 				<div class="col-md-4">
-					<form:input id="age" path="age" name="age" type="number"
+					<form:input id="age" path="age" name="age" type="number" value="0"
 						placeholder="Enter your age" class="form-control input-md"
-						required=""/>
-
+						required="" />
+						<span><form:errors path="age" cssclass="error" /></span>
 				</div>
 			</div>
 
-			<!-- Sex select -->
-			<div class="form-group">
+			<div class="col-md-12">
 				<form:label class="col-md-4 control-label" path="sex" for="sex">Płeć</form:label>
 				<div class="col-md-4">
 					<div class="radio">
-					
-						<form:label path="sex" for="sex-0"> <form:radiobutton path="sex" value="Male"/>Mężczyzna
+
+						<form:label path="sex" for="sex-0">
+							<form:radiobutton path="sex" value="Male" />Mężczyzna
 						</form:label>
 					</div>
 					<div class="radio">
-						<form:label path="sex" for="sex-1"> <form:radiobutton path="sex" value="Female"/>Kobieta
+						<form:label path="sex" for="sex-1">
+							<form:radiobutton path="sex" value="Female" />Kobieta
 						</form:label>
 					</div>
 					<div class="radio">
-						<form:label path="sex" for="sex-2"> <form:radiobutton path="sex" value="Other"/>Inna
+						<form:label path="sex" for="sex-2">
+							<form:radiobutton path="sex" value="Other" />Inna
 						</form:label>
 					</div>
 				</div>
+				<span><form:errors path="sex" cssclass="error" /></span>
 			</div>
-
-			<!-- Submit button -->
-			<div class="form-group">
+			
+			<div class="col-md-12">
 				<label class="col-md-4 control-label" for="submit"></label>
 				<div class="col-md-4">
-				<input type="submit" class="btn btn-success" value="Wyślij"/>
+					<input type="submit" class="btn btn-success" value="Przejdz do badania" />
 				</div>
 			</div>
 
