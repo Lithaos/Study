@@ -1,28 +1,19 @@
 package pl.study.model;
 
-import javax.validation.constraints.NotEmpty;
-
 public class User {
 
 	private Long id;
 
-	@NotEmpty(message = "Podaj imię")
-	private String userName;
-
+	private String sex;
+	
 	private int age;
 
-	private String sex;
-
-	public Long getId() {
-		return id;
+	public String getSex() {
+		return sex;
 	}
 
-	public String getUserName() {
-		return userName;
-	}
-
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setSex(String sex) {
+		this.sex = sex;
 	}
 
 	public int getAge() {
@@ -33,12 +24,10 @@ public class User {
 		this.age = age;
 	}
 
-	public String getSex() {
-		return sex;
+	public Long getId() {
+		return id;
 	}
-
-	public void setSex(String sex) {
-		this.sex = sex;
-	}
+	
+	
 
 }

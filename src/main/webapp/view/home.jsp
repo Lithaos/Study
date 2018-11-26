@@ -9,6 +9,7 @@
 
 <body>
 	<h3>Witaj, zapraszam!</h3>
+	<h4><a href="/survey">Wez udział w badaniu</a></h4>
 </body>
 </html>
 
