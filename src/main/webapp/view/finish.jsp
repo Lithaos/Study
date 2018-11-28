@@ -8,7 +8,10 @@
 </head>
 
 <body>
-	<h3>Dziękuję za wzięcie udziału w badaniu!</h3>
+	<div class="jumbotron text-xs-center">
+  <h1 class="display-3">Dziękuję za udział w badaniu!</h1>
+  <img alt="cats" src="https://royalcanin.pl/blog/wp-content/uploads/2016/12/205W-950x587.jpeg">
+</div>
 </body>
 </html>
 

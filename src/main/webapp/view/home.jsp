@@ -8,8 +8,10 @@
 </head>
 
 <body>
-	<h3>Witaj, zapraszam!</h3>
-	<h4><a href="/survey">Wez udział w badaniu</a></h4>
+	<div class="jumbotron text-xs-center">
+  <h1 class="display-3">Witaj, dziękuje za zainteresowanie!</h1>
+ <h4><a href="/survey">Wez udział w badaniu</a></h4>
+</div>
 </body>
 </html>
 

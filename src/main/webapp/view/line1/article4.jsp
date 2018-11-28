@@ -28,8 +28,7 @@
 								src='http://placehold.it/500x500' />
 						</div>
 						<div class="">
-							<h1 class="hidden-xs hidden-sm">TITULO LARGO DE UNA
-								INVESTIGACION cualquiera</h1>
+							<h1 class="hidden-xs hidden-sm">Linia 1 strona 4</h1>
 							<hr>
 							<small>10 - 04 -2017</small><br> <small><strong>Author</strong></small>
 							<hr>
