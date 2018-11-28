@@ -3,6 +3,9 @@
 <%@page language="java" contentType="text/html" pageEncoding="UTF-8"%>
 <html>
 <head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Welcome</title>
 </head>
@@ -14,19 +17,10 @@
                 <div class="jumbotron ">
                   <h1 class="display-4">Dziękuję za udział w badaniu!</h1>
                   <p class="lead"> <img alt="cats" src="https://royalcanin.pl/blog/wp-content/uploads/2016/12/205W-950x587.jpeg"></p>
-
-
-
             </div>
          </div>
         </div>
      </div>
-
-
-	<div class="jumbotron text-xs-center">
-  <h1 class="display-3"></h1>
- 
-</div>
 </body>
 </html>
 
