@@ -10,7 +10,6 @@
 	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<c:url value="/resources/css/dvdTrackerCSS.css" var="cssURL" />
 <title>Welcome</title>
 </head>
 <c:set var="user" value="${user}" scope="session" />
