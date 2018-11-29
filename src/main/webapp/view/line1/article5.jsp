@@ -81,7 +81,7 @@
 				</div>
 			</div>
 		</div>
-		<a href="/finish" class="btn btn-default btn-lg">Następna strona</a>
+		<a href="/questions" class="btn btn-default btn-lg">Następna strona</a>
 	</div>
 </body>
 </html>

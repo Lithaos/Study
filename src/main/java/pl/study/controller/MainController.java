@@ -1,5 +1,8 @@
 package pl.study.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import pl.study.model.Question;
 import pl.study.model.User;
 import pl.study.repository.UserRepository;
 
@@ -79,9 +83,37 @@ public class MainController {
 		return "line" + user.getLine() + "/article5";
 	}
 
-	@RequestMapping("/finish")
-	public String finish(@SessionAttribute("user") User user, ModelMap model) {
+	@RequestMapping(value = "/questions")
+	public String questions(@SessionAttribute("user") User user, ModelMap model) {
+		List<Question> questions = new ArrayList<Question>();
+		if (user.getLine() == 0) {
+			questions.add(new Question("Q1", "A", "B", "C", "D"));
+			questions.add(new Question("Q2", "A", "B", "C", "D"));
+			questions.add(new Question("Q3", "A", "B", "C", "D"));
+			questions.add(new Question("Q4", "A", "B", "C", "D"));
+			questions.add(new Question("Q5", "A", "B", "C", "D"));
+
+		} else {
+			questions.add(new Question("Q1", "A", "B", "C", "D"));
+			questions.add(new Question("Q2", "A", "B", "C", "D"));
+			questions.add(new Question("Q3", "A", "B", "C", "D"));
+			questions.add(new Question("Q4", "A", "B", "C", "D"));
+			questions.add(new Question("Q5", "A", "B", "C", "D"));
+		}
+		model.addAttribute("questions", questions);
 		user.setArticle5(true);
+		userRepository.save(user);
+		return "questions";
+	}
+
+	@RequestMapping(value = "/finish", method = RequestMethod.POST)
+	public String finish(@SessionAttribute("user") User user, @ModelAttribute("question") User questions,
+			ModelMap model) {
+		user.setQ1(questions.getQ1());
+		user.setQ2(questions.getQ2());
+		user.setQ3(questions.getQ3());
+		user.setQ4(questions.getQ4());
+		user.setQ5(questions.getQ5());
 		userRepository.save(user);
 		return "finish";
 	}
